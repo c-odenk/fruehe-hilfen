@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <title>Fruehe Hilfen Bonn</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/fruehe-hilfen-bonn.css">
+    <!--[if IE]>
+    	<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+    <![endif]-->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <!-- ############################################# -->
+    <!--        HEADER 1. Reihe - Login Button         -->
+    <div class="container px-md-0">
+      <div class="d-flex flex-lg-row-reverse">
+        <button type="button" class="btn btn-lg d-none d-md-block login-button">
+          <a href="#"><i class="fa fa-play-circle-o pr-2" aria-hidden="true"></i> LOGIN </a>
+        </button>
+      </div>
+    </div>
+
+    <!-- ############################################# -->
+    <!-- HEADER 2. Reihe - Logo / Menü / Volltextsuche -->
+    <div class="container px-md-0">
+      <div class="row px-0 mx-0">
+
+        <!-- ###################### -->
+        <!--      1. SPALTE LOGO    -->
+        <div class="col-8 offset-2 col-md-4 offset-md-4 offset-lg-0 col-lg-3 px-0">
+          <a href="index.html"><img src="images/Logos/Logo.svg" class="" id="logo"></a>
+        </div>
+
+        <!-- ###################### -->
+        <!--      2. SPALTE NAV     -->
+        <div class="col-2 col-md-4 col-lg-9 px-0 mt-3 my-md-auto">
+          <!-- ###################### -->
+          <!-- SYMBOL RESPONSIVE MENÜ -->
+          <div class="menue-responsive">
+            <button class="navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#responsive-menue" aria-controls="responsive-menue" aria-expanded="false" aria-label="Toggle navigation">
+              &#9776;
+            </button>
+          </div>
+
+          <!-- ###################### -->
+          <!--      VOLLTEXTSUCHE     -->
+          <div class="volltextsuche order-md-1">
+            <form class="form volltextsuche-button d-none d-md-block mx-0 px-0">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="VOLLTEXTSUCHE">
+                <span class="suchfeld-lupe"><img src="images/Symbole/lupe-klein.png" alt=""></span>
+              </div>
+            </form>
+          </div>
+
+          <!-- ###################### -->
+          <!-- MAINNAVIGATION DESKTOP -->
+          <nav class="menue">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li class="has-children"><a href="#">Über Uns</a>
+                <ul>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="#">Entstehung</a></li>
+                  <li><a href="#">Finanzierung / Sponsoring</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><a href="#">Für Familien</a>
+                <ul>
+                  <li><a href="beratung_und_hilfe.html">Beratung & Hilfe</a></li>
+                  <li><a href="einrichtungen.html">Einrichtungen</a></li>
+                  <li><a href="layout-leer.html">Frühe Hilfen in der Klinik</a></li>
+                  <li><a href="#">Postportale Depression</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><a href="#">Für Fachkräfte</a>
+                <ul>
+                  <li><a href="#">Termine</a></li>
+                  <li><a href="#">Wissensplattform</a></li>
+                  <li><a href="#">Einrichtungen</a></li>
+                  <li><a href="#">Aktuelles</a></li>
+                  <li><a href="#">Stellenanzeigen</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Links</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- ############################################################# -->
+    <!--     seperates Menü in eigener Zeile für responsive Dropdown   -->
+    <!-- dieses Menü erscheint nur durch den Button in mobiler Ansicht -->
+    <div class="container">
+      <div class="row d-block d-lg-none">
+        <nav class="navbar navbar-responsive navbar-expand-lg">
+          <div class="collapse navbar-collapse" id="responsive-menue">
+            <ul class="navbar-nav ml-auto responsive-menue">
+
+              <!-- Link - Home -->
+              <li class="nav-item active">
+                <a class="nav-link" href="#"> HOME <span class="sr-only">(current)</span></a>
+              </li>
+
+              <!-- Link Dropdown - Über Uns -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ÜBER UNS </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="team.html"> Team       </a>
+                  <a class="dropdown-item" href="#"> Entstehung </a>
+                  <a class="dropdown-item" href="#"> Finanzierung / Sponsoring </a>
+                </div>
+              </li>
+
+              <!-- Link Dropdown - Für Familien -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  FÜR FAMILIEN </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="beratung_und_hilfe.html"> Beratung & Hilfe </a>
+                  <a class="dropdown-item" href="einrichtungen.html"> Einrichtungen    </a>
+                  <a class="dropdown-item" href="layout-leer.html"> Frühe Hilfen in der Klinik </a>
+                  <a class="dropdown-item" href="#"> Postportale Depression </a>
+                </div>
+              </li>
+
+              <!-- Link Dropdown - Für Fachkräfte -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://www.google.de/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  FÜR FACHKRÄFTE </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"> FÜR FACHKRÄFTE </a>
+                  <a class="dropdown-item" href="#"> Termine </a>
+                  <a class="dropdown-item" href="#"> Wissensplattform </a>
+                  <a class="dropdown-item" href="#"> Einrichtungen   </a>
+                  <a class="dropdown-item" href="#"> Aktuelles       </a>
+                  <a class="dropdown-item" href="#"> Stellenanzeigen </a>
+                </div>
+              </li>
+
+              <!-- Link - Links -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"> LINKS </a>
+              </li>
+
+              <!-- Link - Kontakt -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"> KONTAKT </a>
+              </li>
+
+              <!-- Link - Login -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"> MItarbeiter Login </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ################################## -->
+    <!--        Carousel / Slideshow        -->
+    <div class="container px-0" id="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">                                    <!-- Slider 1 -->
+            <img class="d-block " src="images/header/header_1.jpg" alt="">      <!-- Slider 1 -->
+          </div>
+          <div class="carousel-item">                                           <!-- Slider 2 -->
+            <img class="d-block w-100" src="images/header/header_2.jpg" alt=""> <!-- Slider 2 -->
+          </div>
+          <div class="carousel-item">                                           <!-- Slider 3 -->
+            <img class="d-block w-100" src="images/header/header_3.jpg" alt=""> <!-- Slider 3 -->
+          </div>
+          <div class="carousel-item">                                           <!-- Slider 4 -->
+            <img class="d-block w-100" src="images/header/header_4.jpg" alt=""> <!-- Slider 4 -->
+          </div>
+          <div class="carousel-item">                                           <!-- Slider 5 -->
+            <img class="d-block w-100" src="images/header/header_5.jpg" alt=""> <!-- Slider 5 -->
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- ################################################## -->
+    <!-- 1. Reihe - 8/12 für Haupttext & 4/12 für Sideblock -->
+    <div class="container">
+      <div class="row row_reihe_1">
+        <!-- Haupttext -->
+        <div class="col-12 col-lg-8 haupttext">
+          <div class="row">
+            <!-- Spalte für Fontawesome Pfeil -->
+            <div class="col-1 mr-2 mr-md-0">
+              <img src="images/Symbole/pfeil-gruen.png" class="pfeilsymbol" alt="">
+            </div>
+            <!-- Spalte für Haupttext -->
+            <div class="col-10 col-md-11">
+              <h1> Das ist die Headline </h1>
+              <h2> So sieht die Subheadline aus </h2>
+              <br>
+              <p class="d-none d-lg-block"> Frühe Hilfen Bonn - das Netzwerk für Vater, Mutter, Kind ist ein Zusammenschluss von mehr als 50 Einrichtungen in Bonn,
+                  die verschiedene Angebiote für Sie bereit halten. Damit Sie Ihr Angebot in nächster Umgebung leichter finden können,
+                  bieten wir Ihnen einen umfassenden Angebotskatalog mit einer Suchfunktion. Wenn Sie unsicher sind oder Fragen haben und
+                  persönlichen Kontakt wünschen, besuchen wir Sie auch gerne zu Hause.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Sideblock -->
+        <aside class="col-12 col-lg-4 sideblock d-none d-lg-block pt-4">
+          <a href="#"><img src="images/netzwerkpartner.png" class="img-fluid mx-auto d-block"></a>
+          <h5> Unsere Netzwerkpartner <img src="images/Symbole/pfeil-orange.png" class="pfeilsymbol" alt=""></h5>
+        </aside>
+      </div>
+    </div>
+
+    <!-- ################################################################################## -->
+    <!-- 2. Reihe - jeweils 4/12 für Blöcke "Für Familien" "Für Fachkräfte" "Angebotssuche" -->
+    <div class="container">
+      <div class="row row_reihe_2">
+        <!-- 1. Block "Für Familien" -->
+        <div class="col-xs-12 col-sm-6 col-lg-4 pb-4" id="infoblock1">
+          <div class="card">
+            <div class="card-block">
+              <h3 class="card-title pt-4 pl-4"> <img src="images/Symbole/pfeil-orange.png" class="pfeilsymbol" alt=""> Für Familien </h3>
+              <img src="images/Boxen/für-familien.png" alt="" class="img-fluid mx-auto my-4 d-block">
+              <div class="block_hintergrund_1">
+                <hr>
+                <div class="row">
+                  <div class="col-11">
+                    <p class="card-text"> Ciliquis ma nisciunt ad quat, tem fugiaep udionse quiat quasi si volupta debist ... </p>
+                  </div>
+                  <div class="col-1">
+                    <a href="beratung_und_hilfe.html"><img src="images/Symbole/pfeil-orange.png" class="pfeilsymbol-2" alt=""></p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2. Block "Für Fachkräfte" -->
+        <div class="col-xs-12 col-sm-6 col-lg-4 pb-4" id="infoblock2">
+          <div class="card">
+            <div class="card-block">
+              <h3 class="card-title pt-4 pl-3"> <img src="images/Symbole/pfeil-gruen.png" class="pfeilsymbol" alt=""> Für Fachkräfte </h3>
+              <img src="images/Boxen/für-fachkräfte.png" alt="" class="img-fluid mx-auto my-4 d-block">
+              <div class="block_hintergrund_1">
+                <hr>
+                <div class="row">
+                  <div class="col-11">
+                    <p class="card-text"> Ciliquis ma nisciunt ad quat, tem fugiaep udionse quiat quasi si volupta debist ... </p>
+                  </div>
+                  <div class="col-1">
+                    <a href=""><img src="images/Symbole/pfeil-gruen.png" class="pfeilsymbol-2" alt=""></p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3. Block "Angebotssuche" -->
+        <div class="col-xs-12 col-lg-4 pb-4">
+          <div class="card border-0" id="suchblock">
+            <div class="card-block">
+              <div class="row pt-4 px-3">
+                <div class="col-12 col-md-6 col-lg-12">
+                  <h3><img src="images/Symbole/pfeil-weiß.png" class="pfeilsymbol" alt=""> Angebotssuche </h3>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                  <form class="form px-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="SUCHBEGRIFF">
+                      <span class="suchfeld-lupe"><img src="images/Symbole/lupe-klein.png" alt=""></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row hintergrund mx-4 mx-md-5 mx-lg-4 pb-3 pt-5 pt-md-0 pt-lg-5">
+                <div class="col-12">
+                  <p> Finden Sie Angebote aller Netzwerkpartner in unmittelbarer Nähe - von der Krabbelgruppe bis zur Beratungsstelle ... </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ################################## -->
+    <!--    Extrareihe für mobilen Flyer    -->
+    <!--    Nur auf Smartphones sichtbar    -->
+
+    <!--   NEUE VERSION MIT ZIRKELHINTERGRUND -->
+    <div class="container d-md-none d-block flyer-mobil my-4">
+      <div class="row">
+        <div class="background-circle">
+        </div>
+        <div class="content">
+          <a href="pdf/DRUCK_fruehe_hilfen_flyer_din_lang_NOV_2016.pdf" target="_blank"><img src="images/Flyer.png" class="img-fluid "></a>
+        </div>
+        <div class="col-12 content-downloaden">
+          <h5 class="pt-3"> Flyer downloaden</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- ################################## -->
+    <!-- 3. Reihe Kontakt, Menü & Flyer -->
+    <div class="container-fluid row_reihe_3">
+      <div class="container">
+        <div class="row">
+          <!-- Kontaktdetails -->
+          <div class="col-lg-3 col-md-7 xs-12 pt-4 pr-0">
+            <table>
+              <tr>
+                <td> </td>
+                <td> <b> Frühe Hilfen Bonn </b></td>
+              </tr>
+              <tr>
+                <td> <i class="fa fa-phone fa-lg" aria-hidden="true"></i></td>
+                <td> <b> Telefon (0228) 224 155 </b></td>
+              </tr>
+              <tr>
+                <td> <i class="fa fa-envelope fa-lg" aria-hidden="true"></i> </td>
+                <td> <b> info@fruehehilfen-bonn.de </b></td>
+              </tr>
+            </table>
+          </div>
+          <!-- Menü "Über uns" -->
+          <div class="col-lg-2 d-none d-lg-block pt-lg-4">
+            <p><span class="link_header"> ÜBER UNS </span><br>
+            <a href="#"> Team       </a><br>
+            <a href="#"> Entstehung </a><br>
+            <a href="#"> Finanzierung / Sponsoring </a></p>
+          </div>
+          <!-- Menü "Für Familien" -->
+          <div class="col-md-2 d-none d-lg-block pt-lg-4">
+            <p><span class="link_header"> FÜR FAMILIEN </span><br>
+            <a href="beratung_und_hilfe.html"> Beratung & Hilfe  </a><br>
+            <a href="#"> Einrichtungen     </a><br>
+            <a href="#"> Frühe Hilfen in der Klinik </a><br>
+            <a href="#"> Postpartale Depression </a></p>
+          </div>
+          <!-- Menü "Für Fachkräfte" -->
+          <div class="col-md-2 d-none d-lg-block pt-lg-4">
+            <p><span class="link_header"> FÜR FACHKRÄFTE </span><br>
+            <a href="#"> Termine          </a><br>
+            <a href="#"> Wissensplattform </a><br>
+            <a href="#"> Einrichtungen    </a><br>
+            <a href="#"> Aktuelles        </a><br>
+            <a href="#"> Stellenanzeigen  </a></p>
+          </div>
+          <!-- Menü "Flyer downloaden" -->
+          <div class="col-lg-3 col-md-5 d-none d-md-block flyer">
+            <a href="pdf/DRUCK_fruehe_hilfen_flyer_din_lang_NOV_2016.pdf" target="_blank"><img src="images/Flyer.png" class="img-fluid"></a>
+            <h5 class="pt-3"> Flyer downloaden <i class="fa fa-inbox pl-1" aria-hidden="true"></i></h5>
+          </div>
+          <!-- Copyright -->
+          <div class="col-md-12 xs-12 d-none d-md-block">
+            <p> &copy; FRÜHE HILFEN BONN 2017 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ############################################ -->
+    <!-- 4. Reihe - Footer mit Partnern und Impressum -->
+    <footer class="container">
+      <div class="row fussbereich">
+        <div class="col-md-3 xs-12">
+          <p> Unterstütz von: </p>
+        </div>
+        <div class="col-md-1 xs-12" id="logo-stadt-bonn">
+          <img src="images/Logos/Logo_Bonn.png" alt="" class="">
+        </div>
+        <div class="col-md-3 xs-12">
+          <img src="images/Logos/BI_FrueheHilfen_Logo.png" alt="" class="">
+        </div>
+        <div class="col-md-3 xs-12">
+          <img src="images/Logos/Logo_BMFSFJ.png" alt="" class="">
+        </div>
+
+        <div class="col-md-2 xs-12">
+          <p><a href="#" class="impressum pt-4 pt-md-0"> Impressum </a></p>
+        </div>
+      </div>
+    </footer>
+
+
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+   <script src="https://use.fontawesome.com/1d823c43ba.js"></script>
+ </body>
+</html>
