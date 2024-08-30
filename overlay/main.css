@@ -1,0 +1,43 @@
+
+
+.flyer-mobil {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+
+.flyer-mobil .background-circle {
+  padding: 0px;
+  margin: 0px;
+  background-color: #aac72e;
+  height: 260px;
+  width: 100%;
+  margin: 13px 13%;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.flyer-mobil .content {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -7.5%);
+  z-index: 8;
+
+}
+
+.flyer-mobil .content img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flyer-mobil .content-downloaden {
+  text-align: center;
+  color: #d67545;
+}

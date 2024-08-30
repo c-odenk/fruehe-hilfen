@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Fruehe Hilfen Bonn</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/fruehe-hilfen-bonn.css">
+    <!-- Lato Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- ############################################# -->
+    <!--        HEADER 1. Reihe - Login Button         -->
+    <div class="container px-md-0">
+      <div class="d-flex flex-lg-row-reverse">
+        <button type="button" class="btn btn-lg d-none d-md-block login-button">
+          <a href="#"><i class="fa fa-play-circle-o pr-2" aria-hidden="true"></i> LOGIN </a>
+        </button>
+      </div>
+    </div>
+
+    <!-- ############################################# -->
+    <!-- HEADER 2. Reihe - Logo / Menü / Volltextsuche -->
+    <div class="container px-md-0">
+      <div class="row px-0 mx-0">
+
+        <!-- ###################### -->
+        <!--      1. SPALTE LOGO    -->
+        <div class="col-8 offset-2 col-md-4 offset-md-4 offset-lg-0 col-lg-3 px-0">
+          <a href="index.html"><img src="images/Logos/Logo.svg" class="" id="logo"></a>
+        </div>
+
+        <!-- ###################### -->
+        <!--      2. SPALTE NAV     -->
+        <div class="col-2 col-md-4 col-lg-9 px-0 mt-3 my-md-auto">
+          <!-- ###################### -->
+          <!-- SYMBOL RESPONSIVE MENÜ -->
+          <div class="menü-responsive">
+            <button class="navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#responsive-menü" aria-controls="responsive-menü" aria-expanded="false" aria-label="Toggle navigation">
+              &#9776;
+            </button>
+          </div>
+
+          <!-- ###################### -->
+          <!--      VOLLTEXTSUCHE     -->
+          <div class="volltextsuche order-md-1">
+            <form class="form volltextsuche-button d-none d-md-block mx-0 px-0">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="VOLLTEXTSUCHE">
+                <span class="suchfeld-lupe"><img src="images/Symbole/lupe-klein.png" alt=""></span>
+              </div>
+            </form>
+          </div>
+
+          <!-- ###################### -->
+          <!-- MAINNAVIGATION DESKTOP -->
+          <nav class="menü">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="has-children"><a href="#" class="active">Über Uns</a>
+                <ul>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="#">Entstehung</a></li>
+                  <li><a href="#">Finanzierung / Sponsoring</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><a href="#">Für Familien</a>
+                <ul>
+                  <li><a href="beratung_und_hilfe.html">Beratung & Hilfe</a></li>
+                  <li><a href="einrichtungen.html">Einrichtungen</a></li>
+                  <li><a href="layout-leer.html">Frühe Hilfen in der Klinik</a></li>
+                  <li><a href="#">Postportale Depression</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><a href="#">Für Fachkräfte</a>
+                <ul>
+                  <li><a href="#">Termine</a></li>
+                  <li><a href="#">Wissensplattform</a></li>
+                  <li><a href="#">Einrichtungen</a></li>
+                  <li><a href="#">Aktuelles</a></li>
+                  <li><a href="#">Stellenanzeigen</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Links</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- ############################################################# -->
+    <!--     seperates Menü in eigener Zeile für responsive Dropdown   -->
+    <!-- dieses Menü erscheint nur durch den Button in mobiler Ansicht -->
+    <div class="container">
+      <div class="row d-block d-lg-none">
+        <nav class="navbar navbar-responsive navbar-expand-lg">
+          <div class="collapse navbar-collapse" id="responsive-menü">
+            <ul class="navbar-nav ml-auto responsive-menü">
+
+              <!-- Link - Home -->
+              <li class="nav-item active">
+                <a class="nav-link" href="#"> HOME <span class="sr-only">(current)</span></a>
+              </li>
+
+              <!-- Link Dropdown - Über Uns -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ÜBER UNS </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="team.html"> Team       </a>
+                  <a class="dropdown-item" href="#"> Entstehung </a>
+                  <a class="dropdown-item" href="#"> Finanzierung / Sponsoring </a>
+                </div>
+              </li>
+
+              <!-- Link Dropdown - Für Familien -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  FÜR FAMILIEN </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="beratung_und_hilfe.html"> Beratung & Hilfe </a>
+                  <a class="dropdown-item" href="einrichtungen.html"> Einrichtungen    </a>
+                  <a class="dropdown-item" href="layout-leer.html"> Frühe Hilfen in der Klinik </a>
+                  <a class="dropdown-item" href="#"> Postportale Depression </a>
+                </div>
+              </li>
+
+              <!-- Link Dropdown - Für Fachkräfte -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  FÜR FACHKRÄFTE </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"> Termine </a>
+                  <a class="dropdown-item" href="#"> Wissensplattform </a>
+                  <a class="dropdown-item" href="#"> Einrichtungen   </a>
+                  <a class="dropdown-item" href="#"> Aktuelles       </a>
+                  <a class="dropdown-item" href="#"> Stellenanzeigen </a>
+                </div>
+              </li>
+
+              <!-- Link - Links -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"> LINKS </a>
+              </li>
+
+              <!-- Link - Kontakt -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"> KONTAKT </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ##################################### -->
+    <!-- Wallpaper // aus Slideshow Startseite -->
+    <div class="container px-0">                                          <!-- Header Wallpaper 1 -->
+      <img src="images/header/header_1.jpg" class="wallpaper" alt="">     <!-- Header Wallpaper 1 -->
+    </div>                                                                <!-- Header Wallpaper 1 -->
+
+    <div class="container">
+      <div class="row row_reihe_1">
+        <!-- ########################### -->
+        <!-- 1. Spalte Infotext und Team -->
+        <div class="col-12 col-lg-8">
+          <div class="row">
+            <!-- ######################### -->
+            <!-- 1. Spalte für Pfeilsymbol -->
+            <div class="col-1 d-none d-md-block">
+              <img src="images/Symbole/pfeil-grün.png" class="pfeilsymbol" alt="">
+            </div>
+            <!-- ################## -->
+            <!-- 2. Spalte für Text -->
+            <div class="col-12 col-md-11 teamInfotext">
+              <!-- Hier steht der Infotext -->
+              <h1> Koordinierungsstelle Frühe Hilfen Bonn </h1>
+              <h2> So sieht die Subheadline aus </h2>
+              <br>
+              <p><b> "Frühe Hilfen Bonn - Das Netzwerk für Vater, Mutter, Kind" </b> wird koordiniert vom
+                     <a target="_blank" href="http://www.familienkreis-bonn.de/home.html">Familienkreis e.V.</a> und dem
+                     <a target="_blank" href="http://caritas.erzbistum-koeln.de/bonn-cv/kinder_jugend_und_familie/fruehe_hilfen_bonn-_netzwerk_fuer_vater_mutter_kind/">
+                     Caritasverband </a> für die Stadt Bonn e.V.
+              </p>
+              <p><b> Telefon: 0228 / 22 41 55 </b><br>
+                 <b> E-Mail: </b><a href="#">info@fruehehilfen-bonn.de</a>
+              </p>
+              <br>
+              <h2> Aufgaben der Koordinierungsstelle </h2>
+              <p><b> Sowohl für Eltern als auch für Fachleute ist die Koordinierungsstelle Ansprechpartner </b></p>
+              <p><b> Für Eltern: </b><br>
+                 Im Rahmen der Öffentlichkeitsarbeit bemüht sie sich, junge Eltern durch Kooperationen mit Entbindungskliniken, Frauen- und Kinderärzten
+                 möglichst frühzeitig zu erreichen und über die Vielzahl der Hilfsangebote in Bonn zu informieren.
+                 <br>
+                 In Belastungs- oder Überforderungssituationen bietet sie unbürokratische und schnelle Hilfe durch ehrenamtliche Mitarbeiterinnen sowie eine
+                 Kinderkrankenschwester und eine Familienhebamme. Im Rahmen eines Hausbesuchs durch eine pädagogische Fachkraft wird zudem weiterer
+                   Unterstützungsbedarf mit der Familie besprochen und nach einem geeigneten Angebot aus dem Netzwerk gesucht.
+              </p>
+              <p><b> Für Fachkräfte: </b><p>
+              <p>Die Koordinierungsstelle ist verantwortlich für eine verbindliche und effektive Netzwerkarbeit. Sie soll das gemeinsame Ziel aller
+                  Partner, die Optimierung der fallbezogenen und fallübergreifenden Zusammenarbeit, vorantreiben. Zu diesem Zweck organisiert sie die
+                  regelmäßigen Netzwerktreffen, übernimmt die Aufbereitung von Arbeitsergebnissen und sorgt für den Transfer in andere relevante
+                  Fachgebiete.
+                  <br>
+                  In Unterarbeitskreisen wie z.B. dem AK Bindung werden spezifische Themen vertieft und dem Netzwerk zur Verfügung gestellt.
+                  <br>
+                  Die Koordinierungsstelle übernimmt zudem die Darstellung nach Außen. Sie präsentiert das Bonner Netzwerk auf überregionalen
+                  Veranstaltungen und integriert Anregungen aus anderen Kommunen.
+              </p>
+              <br>
+              <h2> Das Team der Koordinierungsstelle </h2>
+              <p> Unser Team besteht aus pädagogischen Fachkräften, einer Familienhebamme, einer Kinderkrankenschwester und zwei Projektassistentinnen. </p>
+              <ul>
+                <li> Anja Henkel (Projektleitung) </li>
+                <li> Susanne Absalon (Projektleitung) </li>
+                <li> Jutta Oster (pädagogische Fachkraft) </li>
+                <li> Sonja Hotz (Familienhebamme) </li>
+                <li> Nina Braun (Kinderkrankenschwester) </li>
+                <li> Claudia Klug (Projektassistenz) </li>
+                <li> Barbara Schönenstein (Projektassistenz) </li>
+              </ul>
+            </div>
+          </div>
+          <br>
+
+          <!-- ############################## -->
+          <!-- 2. Reihe - Infos über das Team -->
+          <div class="row">
+
+            <!-- Mitglied Nr.1 -->
+            <div class="col-12 teamMitglied">
+              <!-- Teammitglied Name -->
+              <h1> Susanne Absalon – Dipl. Sozialpädagogin und Sozialarbeiterin </h1>
+              <!-- Teammitglied Profilbild -->
+              <img src="images/Mitarbeiter/Susanne Absalon.jpg" class="" alt="Profilbild Susanne Absalon">
+              <!-- Teammitglied Infotext -->
+              <p>  Leitung Koordinierungsstelle, Netzwerkkoordination, Institutionelle
+                   Kooperation, Hausbesuche, Entwicklungspsychologische Beratung (EPB),
+                   Koordination Besuchsdienst „Hallo Baby“.           <br>
+                   <br>
+              <!-- Teammitglied Infotext -->
+                    <a href="#">Caritasverband für die Stadt Bonn e.V.</a><br>
+                   Dyroffstr. 7, 53113 Bonn                               <br>
+                   Telefon: 0228 / 10 82 48 oder 0228 / 22 41 55          <br>
+                    <a href="#">fruehehilfen@caritas-bonn.de</a></p>
+            </div>
+
+            <!-- Mitglied Nr.2 -->
+            <div class="col-12 teamMitglied">
+              <!-- Teammitglied Name -->
+              <h1> Nina Braun – Kinderkrankenschwester und Familienkinderkrankenschwester </h1>
+              <!-- Teammitglied Profilbild -->
+              <img src="images/Mitarbeiter/Nina Braun.jpg" class="" alt="Profilbild Susanne Absalon">
+              <!-- Teammitglied Infotext -->
+              <p>  Krisenintervention, praktische Begleitung und Beratung von Familien mit Kindern im
+                  Alter von 0-3 Jahren in besonderen Belastungssituationen, Hausbesuche, Gesundheits-
+                  und Entwicklungsförderung.                          <br>
+                   <br>
+              <!-- Teammitglied Infotext -->
+                   <a href="#">Caritasverband für die Stadt Bonn e.V. </a><br>
+                   Dyroffstr. 7, 53113 Bonn                               <br>
+                   Telefon: 0228 / 10 82 48 oder 0228 / 22 41 55          <br>
+                    <a href="#">fruehehilfen@caritas-bonn.de</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ############################################### -->
+        <!-- 2. Spalte "Netzwerkpartner" und "Angebotssuche" -->
+        <div class="col-12 col-lg-4">
+          <!-- Logo Netzwerkpartner -->
+          <div class="d-none d-lg-block sideblock">
+            <a href="#"><img src="images/netzwerkpartner.png" class="img-fluid mx-auto d-block"></a>
+            <h5> Unsere Netzwerkpartner <img src="images/Symbole/pfeil-orange.png" class="pfeilsymbol" alt=""></h5>
+          </div>
+          <!-- Suchblock -->
+          <div class="card border-0 suchblock-unterseite-klein" id="">
+            <div class="card-block">
+              <div class="row pt-4 px-3">
+                <div class="col-12 col-md-6 col-lg-12">
+                  <h3><img src="images/Symbole/pfeil-weiß.png" class="pfeilsymbol" alt=""> Angebotssuche </h3>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                  <form class="form px-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="SUCHBEGRIFF">
+                      <span class="suchfeld-lupe"><img src="images/Symbole/lupe-klein.png" alt=""></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row hintergrund mx-4 mx-md-5 mx-lg-4 pb-3 pt-5 pt-md-0 pt-lg-4">
+                <div class="col-12">
+                  <p> Ciliquis ma nisciunt ad quat, tem fugiaep udionse quiat quasi si volupta debist que remporem quam re sinti au ... </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ################################## -->
+    <!-- 3. Reihe Kontakt, Menü & Flyer -->
+    <div class="container-fluid row_reihe_3">
+      <div class="container">
+        <div class="row">
+          <!-- Kontaktdetails -->
+          <div class="col-lg-3 col-md-7 xs-12 pt-4 pr-0">
+            <table>
+              <tr>
+                <td> </td>
+                <td> <b> Frühe Hilfen Bonn </b></td>
+              </tr>
+              <tr>
+                <td> <i class="fa fa-phone fa-lg" aria-hidden="true"></i></td>
+                <td> <b> Telefon (0228) 224 155 </b></td>
+              </tr>
+              <tr>
+                <td> <i class="fa fa-envelope fa-lg" aria-hidden="true"></i> </td>
+                <td> <b> info@fruehehilfen-bonn.de </b></td>
+              </tr>
+            </table>
+          </div>
+          <!-- Menü "Über uns" -->
+          <div class="col-lg-2 d-none d-lg-block pt-lg-4">
+            <p><span class="link_header"> ÜBER UNS </span><br>
+            <a href="#"> Team       </a><br>
+            <a href="#"> Entstehung </a><br>
+            <a href="#"> Finanzierung / Sponsoring </a></p>
+          </div>
+          <!-- Menü "Für Familien" -->
+          <div class="col-md-2 d-none d-lg-block pt-lg-4">
+            <p><span class="link_header"> FÜR FAMILIEN </span><br>
+            <a href="beratung_und_hilfe.html"> Beratung & Hilfe  </a><br>
+            <a href="#"> Einrichtungen     </a><br>
+            <a href="#"> Frühe Hilfen in der Klinik </a><br>
+            <a href="#"> Postpartale Depression </a></p>
+          </div>
+          <!-- Menü "Für Fachkräfte" -->
+          <div class="col-md-2 d-none d-lg-block pt-lg-4">
+            <p><span class="link_header"> FÜR FACHKRÄFTE </span><br>
+            <a href="#"> Termine          </a><br>
+            <a href="#"> Wissensplattform </a><br>
+            <a href="#"> Einrichtungen    </a><br>
+            <a href="#"> Aktuelles        </a><br>
+            <a href="#"> Stellenanzeigen  </a></p>
+          </div>
+          <!-- Menü "Flyer downloaden" -->
+          <div class="col-lg-3 col-md-5 d-none d-md-block flyer">
+            <a href="pdf/DRUCK_fruehe_hilfen_flyer_din_lang_NOV_2016.pdf" target="_blank"><img src="images/Flyer.png" class="img-fluid"></a>
+            <h5 class="pt-3"> Flyer downloaden <i class="fa fa-inbox pl-1" aria-hidden="true"></i></h5>
+          </div>
+          <!-- Copyright -->
+          <div class="col-md-12 xs-12 d-none d-md-block">
+            <p> &copy; FRÜHE HILFEN BONN 2017 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- ############################################ -->
+  <!-- 4. Reihe - Footer mit Partnern und Impressum -->
+  <footer class="container">
+    <div class="row fußbereich">
+      <div class="col-md-3 xs-12">
+        <p> Unterstütz von: </p>
+      </div>
+      <div class="col-md-2 xs-12">
+        <img src="images/Logos/Logo_Bonn.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-2 xs-12">
+        <img src="images/Logos/BI_FrueheHilfen_Logo.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-2 xs-12">
+        <img src="images/Logos/Logo_BMFSFJ.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-1 xs-12">
+        <!-- Platzhalter -->
+      </div>
+      <div class="col-md-2 xs-12">
+        <p><a href="#"> Impressum </a></p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+   <script src="https://use.fontawesome.com/1d823c43ba.js"></script>
+ </body>
+</html>
