@@ -1,0 +1,32 @@
+
+/*
+ *  CSS STYLING nur für Internet Explorer
+ *
+ *
+ */
+
+/* ==========================================================================
+VOLLTEXTSUCHE
+========================================================================== */
+
+@media screen and (min-width: 701px){
+  .volltextsuche .volltextsuche-button {
+    margin-top: 300px;
+  }
+}
+
+
+
+/* #### INTERNET EXPLORER ONLY #### */
+@media screen\0 {
+  @media screen and (min-width: 401px) {       /* TABLET */
+    .volltextsuche .volltextsuche-button {
+      margin-top: 25px;
+    }
+  }
+  @media screen and (min-width: 701px) {       /* DESKTOP */
+    .volltextsuche .volltextsuche-button {
+      margin-top: 55px;
+    }
+  }
+}

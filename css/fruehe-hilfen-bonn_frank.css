@@ -1,0 +1,994 @@
+
+/*
+ *  Allgemeine Größenangabe für @MEDIAQUERRIES
+ *  Smartphone: bis - 768 Pixel
+ *  Tablet:     769 - 992 Pixel
+ *  Desktop:    ab 993 Pixel
+*/
+
+/* VERSION FRANK */
+
+/* ==========================================================================
+ALLGEMEIN
+========================================================================== */
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 26px;       /* Vorgabe Frau Kreider */
+  color: #aac72e;        /* Vorgabe Frau Kreider */
+}
+h2 {
+  font-size: 21px;       /* Vorgabe Frau Kreider */
+  color: #d67545;        /* Vorgabe Frau Kreider */
+}
+p {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  line-height: 28px;
+}
+a {
+  color: #d67545;
+}
+
+/* ### ENTFERNT DEN INNENABSTAND DES PFEILSYMBOLS UND DES HAUPTINHALTTEXT FÃœR TABLET UND DESKTOP ### */
+@media screen and (min-width: 768px){   /* Tablet aufwÃ¤rts */
+  .col-1 {
+    padding-left: 0px;
+  }
+  .col-md-11 {
+    padding-left: 0px;
+  }
+}
+
+
+/* ==========================================================================
+  LOGIN
+  ========================================================================== */
+
+.login-button {
+  width: 200px;
+  height: 45px;
+  max-width: 100%;
+  background-color: #d67545;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.login-button button a{
+	color: #fff;
+}
+
+/* ==========================================================================
+  VOLLTEXTSUCHE
+  ========================================================================== */
+
+  .volltextsuche {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .volltextsuche .volltextsuche-button {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    max-width: 100%;
+    color: black;
+  }
+
+  .volltextsuche .volltextsuche-button:active {
+    border: none;
+  }
+
+  .volltextsuche .form-group {
+    float: left;
+    width: 100%;
+  }
+  .volltextsuche .form-control {
+    height: 45px;
+    border: 0px;
+    border-radius: 0px;
+    background-color: #e2eef5;
+    display: block;
+    width: 85%;
+    float: left;
+  }
+  .volltextsuche .suchfeld-lupe {
+    background-color: #e2eef5;
+    cursor:pointer;
+    float: left;
+    width:15%;
+    height: 45px;
+    text-align:center;
+    border-left: 1px solid #e2eef5;
+  }
+  .volltextsuche .suchfeld-lupe img {
+    margin: 12px 8px 0px 0px;
+    width: 23px;
+    height: 23px;
+  }
+
+  .form-control:hover {
+    border: none;
+  }
+
+
+  /* ### EXTRACODE FÃœR INTERNET EXPLORER ABSTAND BUTTON VOLLTEXTSUCHE HEADER ### */
+  /* MOBILE fÃ¼r INTERNET EXPLORER - entfÃ¤llt, da nicht vorhanden */
+
+  /* TABLET fÃ¼r INTERNET EXPLORER */
+  @media all and (min-width: 769px ) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .volltextsuche .volltextsuche-button {
+      margin-top: 25px;
+    }
+    .menue-resposnive {
+      margin-top: 50px;
+    }
+  }
+
+  /* DESKTOP fÃ¼r INTERNET EXPLORER */
+  @media all and (min-width: 993px ) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .volltextsuche .volltextsuche-button {
+      margin-top: 55px;
+    }
+  }
+
+
+/* ==========================================================================
+LOGO
+========================================================================== */
+
+  #logo {
+    margin: auto;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  @media screen and (max-width: 768px){     /* Smartphones */
+    #logo {
+      border: 10px solid white;
+    }
+  }
+  @media screen and (min-width: 769px){     /* Tablet */
+    #logo {
+      border: 20px solid white;
+    }
+  }
+  @media screen and (min-width: 993px){     /* Desktop */
+    #logo {
+      border: 20px solid white;
+      margin-left: -20px;
+    }
+  }
+
+/* ==========================================================================
+MENÃœ DESKTOP
+========================================================================== */
+
+  .menue {
+    padding-left: 20px;
+  }
+
+  nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    flex-grow: 1 0 auto;
+  }
+
+  nav ul li a {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  nav ul li .active {
+    color: #aac72e;
+  }
+
+  .has-children {
+    background-color: #fff;
+  }
+  .has-children ul {
+    display: none;
+    position: absolute;
+    padding-top: 22px;
+    width: 320px;
+    min-width: 100%;
+    text-align: left;
+  }
+  .has-children ul li {
+    padding: 12px 0px 10px 15px;
+    background-color: white;
+    font-size: 17px;
+    text-transform: none;
+    position: static;
+  }
+  .has-children ul li:before {
+    content:"";
+    display: inline-block;
+    width: 20px;
+  }
+
+/*   ####################################    */
+/*               HOVER EFFEKTE               */
+
+  nav ul li:hover {
+    text-decoration: none;
+    z-index: 3;
+    border-bottom: 5px solid #aac72e;
+  }
+
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li a:hover {
+    text-decoration: none;
+    color: #aac72e;
+  }
+
+  .has-children ul li:hover {
+    color: #aac72e;
+    border: none;
+  }
+
+  .has-children ul li a::before {
+    content: "\f0da";
+    display: none;
+    font-family: "fontawesome";
+  }
+
+  .has-children ul li a:hover:before {
+    content: "\f0da";
+    display: inline-block;
+    font-family: "fontawesome";
+    margin-left: -15px;
+    padding-right: 9px;
+    line-height: 15px;
+  }
+
+  /* ## CSS-Regeln fÃ¼r Desktop Ansicht ### */
+  @media screen and (min-width:993px){
+    .menue-responsive {
+      display: none;
+    }
+    .responsive-menue {
+      display: none;
+    }
+  }
+
+/* ==========================================================================
+  MENUE RESPONSIVE & TABLET
+  ========================================================================== */
+
+  .navbar-responsive ul {
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .nav-item {
+    padding-left: 15px;
+  }
+
+  .nav-item:last-child {                  /* nur LOGIN */
+    display: none;
+  }
+
+  @media screen and (max-width:992px){    /* bis Tablet */
+    .menue {
+      display: none;
+    }
+    nav ul {
+      flex-direction: column;
+      text-align: left;
+      padding-left: 30px;
+    }
+    nav ul li {
+      display: block;
+      padding-bottom: 5px;
+    }
+    nav ul li:hover {
+      border-bottom: none;
+    }
+    .has-children ul li a {
+      padding-left: 2rem;
+    }
+  }
+
+  /* ##################################### */
+  /*               SMARTPHONE              */
+  @media screen and (max-width: 768px){
+    .nav-item:last-child {                  /* nur LOGIN */
+      padding-top: 30px;
+      display: block;
+    }
+  }
+
+/* ==========================================================================
+SYMBOL RESPNSOVE MENÃœ
+========================================================================== */
+
+  .menue-responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .navbar-toggler {
+    font-size: 40px;
+    margin-right: -15px;
+    margin-bottom: 40px;
+  }
+
+/* ==========================================================================
+Kopfbereich - Slideshow
+========================================================================== */
+
+  .carousel {
+    min-width: 100%;        /* FRANKS VERSION HAT KEINEN Z-INDEX */
+    width: 100%;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    width: 3%;
+  }
+
+  /* ##################################### */
+  /*               SMARTPHONE              */
+  @media screen and (max-width: 768px){
+    .carousel {
+      margin-top: -50px;
+    }
+    .carousel img {
+    width: 100%
+    /*
+      height: 230px;;
+      max-height: 230px;
+      */
+    }
+	.carousel-indicators {
+		display:none !important;
+	}
+
+/*
+*/
+  }
+  /* ##################################### */
+  /*                 TABLET                */
+  @media screen and (min-width: 769px){
+    .carousel {
+      margin-top: -60px;
+    }
+    .carousel img {
+    width: 100%
+    /*
+      height: 400px;
+      max-height: 400px;
+      */
+    }
+  }
+  /* ##################################### */
+  /*                  DESKTOP              */
+
+  @media screen and (min-width: 992px){     /* DESKTOP - KLEIN - */
+    .carousel {
+      margin-top: -75px;
+    }
+    .carousel img {
+    width: 100%
+    /*
+      height: 391px;
+      max-height: 391px;
+      */
+    }
+  }
+
+  /* DESKTOP groÃŸ */
+  @media screen and (min-width: 1200px){      /* DESKTOP - GROÃŸ - */
+    .carousel {
+      margin-top: -85px;
+    }
+    .carousel img {
+
+      width: 100%;
+      /*
+      height: 500px;
+      max-height: 500px;
+      */
+    }
+  }
+
+  /* ==========================================================================
+    Slideshow Symbole
+    ========================================================================== */
+
+/*  @media screen and (min-width:700px){
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      border-color: #fff;
+      /*background: transparent no-repeat center center;
+      background-size: 100% 100%;
+      background-color: #fff;
+      position: absolute;
+      top: 35%;
+      left: -25px;
+      border: 15px solid #fff;
+      text-align: center;
+      border-radius: 100px;
+    }
+    .carousel-control-next-icon {
+      left: 10px;
+      background-image: url("../images/Symbole/next.png");
+      }
+    .carousel-control-next-icon {
+      left: 10px;
+      background-image: url("../images/Symbole/next.png");
+      }
+  } */
+
+
+
+/* ==========================================================================
+  Header Wallpaper
+  ========================================================================== */
+
+  .wallpaper {
+    z-index: ;
+    width: 100%;
+  }
+
+  /* ##################################### */
+  /*               SMARTPHONE              */
+  @media screen and (max-width: 768px){
+    .wallpaper {
+      margin-top: -50px;
+      height: 230px;
+      max-height: 230px;
+    }
+  }
+  /* ##################################### */
+  /*                 TABLET                */
+  @media screen and (min-width: 769px){
+    .wallpaper {
+      margin-top: -70px;
+      height: 400px;
+      max-height: 400px;
+    }
+  }
+  /* ##################################### */
+  /*                  DESKTOP              */
+
+  @media screen and (min-width: 992px){       /* DESKTOP - KLEIN - */
+    .wallpaper {
+      margin-top: -74px;
+      height: 450px;
+      max-height: 450px;
+    }
+  }
+
+  @media screen and (min-width: 1200px){      /* DESKTOP - GROÃŸ - */
+    .wallpaper {
+      margin-top: -84px;
+      height: 500px;
+      max-height: 500px;
+    }
+  }
+
+/* ==========================================================================
+  1. Reihe - Haupttext & Sideblock
+  ========================================================================== */
+
+  .row_reihe_1 {
+    margin-top: 8%;
+  }
+
+  .row_reihe_1 img.pfeilsymbol {
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+  }
+
+  .sideblock h5 {
+    color: #d67545;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+   .haupttext ul{
+  	margin-left: 1.4em;
+  }
+
+  .haupttext ul li {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .haupttext ul li:before {   /* VORHER = .haupttext ul.menuItems li:before {} */
+    content: "\f0da";
+    display: inline-block;
+    font-family: "fontawesome";
+    padding-right: 10px;
+    color: #aac72e;
+    font-size: 20px;
+     /* new */
+    margin-left: -0.87em;
+  }
+  .haupttext ul>li>ul>li {
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  .haupttext ul>li>ul>li:before {   /* VORHER = .haupttext ul.menuItems li:before {} */
+    content: "\2022";
+    display: inline-block;
+    padding-right: 10px;
+    color: #aac72e;
+    font-size: 20px;
+  }
+
+  .haupttext ul.menuItems b {
+
+  }
+
+  .haupttext table td {
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+
+
+/* ==========================================================================
+  2. Reihe - InfoblÃ¶cke
+  ========================================================================== */
+
+  .row_reihe_2 {
+    margin-top: 6%;
+  }
+  .card {
+    background: transparent;
+    border: 0,5px dotted black;
+    border-radius: 0;
+  }
+  .block_hintergrund_1 {
+    background-color: #e2eef5;          /* Vorgabe Frau Kreider */
+  }
+
+  /** ######################################################## **/
+  /**                         Block 1                          **/
+  #infoblock1 .card {
+    border: 1px solid #d67545;          /* Vorgabe Frau Kreider */
+  }
+  #infoblock1 img {
+    width: 260px;
+    height: 270px;
+  }
+  #infoblock1 img.pfeilsymbol {         /* Pfeilsymbol neben Ãœberschricht */
+    width: 30px;
+    height: 30px;
+    margin-top: -8px;
+    margin-right: 10px;
+  }
+  #infoblock1 img.pfeilsymbol-2 {       /* Pfeilsymbol neben Text */
+    width: 30px;
+    height: 30px;
+    /*
+    margin-left: -40px;
+    margin-top: 65px;
+    */
+  }
+  #infoblock1 hr {
+    height: 8px;
+    background-color: #d67545;          /* Vorgabe Frau Kreider */
+    margin-bottom: 0;
+  }
+  #infoblock1 .card-text:last-child {
+   /* padding: 15px 25px 15px 25px;*/
+  }
+
+
+  /** ######################################################## **/
+  /**                         Block 2                          **/
+  #infoblock2 .card {
+    border: 1px solid #aac72e;        /* Vorgabe Frau Kreider */
+  }
+
+  #infoblock2 img {
+    width: 260px;
+    height: 270px;
+  }
+  #infoblock2 img.pfeilsymbol {       /* Pfeilsymbol neben Ãœberschricht */
+    width: 30px;
+    height: 30px;
+    margin-top: -8px;
+    margin-right: 10px;
+  }
+  #infoblock2 img.pfeilsymbol-2 {     /* Pfeilsymbol neben Text */
+    width: 30px;
+    height: 30px;
+    /*
+    margin-left: -40px;
+    margin-top: 65px;
+    */
+  }
+  #infoblock2 hr {
+    height: 8px;
+    background-color:#aac72e;          /* Vorgabe Frau Kreider */
+    margin-bottom: 0;
+  }
+
+  #infoblock2 .card-text:last-child {
+   /* padding: 15px 25px 15px 25px; */
+  }
+
+  #infoblock1 a, #infoblock2 a {
+  	color:black;
+  }
+  /** ######################################################## **/
+  /**                        Suchblock                         **/
+
+  /* ##################################### */
+  /*               SMARTPHONE              */
+  @media screen and (max-width: 768px){
+    #suchblock,
+    .suchblock-unterseite-klein {
+      background: #d67545 url("../images/Symbole/lupe-gross.png") no-repeat;  /* Hintergrundbild wird nicht geladen */
+      background-position: 50% 70%;
+      height: auto;
+      min-heigth:550px;
+    }
+    #suchblock p,
+    .suchblock-unterseite-klein p {
+      padding-top: 30px;
+    }
+    .hintergrund, .hintergrund p {
+    	margin:0;
+    	padding:0;
+    }
+  }
+
+  /* ##################################### */
+  /*                 TABLET                */
+  @media screen and (min-width: 769px){                                   /* Hintergrundbild wird ausgeblendet */
+    #suchblock,
+    .suchblock-unterseite-klein {
+      background: none;
+      background-color: #d67545;
+      padding-bottom: 2%;
+    }
+  }
+
+  /* ##################################### */
+  /*                  DESKTOP              */
+  @media screen and (min-width: 993px){
+    #suchblock,
+    .suchblock-unterseite-klein {
+      background: #d67545 url("../images/Symbole/lupe-gross.png") no-repeat;  /* Hintergrundbild wird nicht geladen */
+      background-position: 50% 70%;
+      height: 100%;
+      max-height: 600px
+    }
+    #suchblock p  {
+       padding-top: 40px;
+    }
+	.suchblock-unterseite-klein p {
+      	padding-top: 40px;
+
+    }
+
+  }
+  #suchblock h3,
+  .suchblock-unterseite-klein h3 {
+    margin-bottom: 10%;
+    color: #fff !important;
+  }
+  #suchblock img,
+  .suchblock-unterseite-klein img {
+    width: 60%;
+    height: 60%;
+  }
+  #suchblock img.pfeilsymbol,
+  .suchblock-unterseite-klein img.pfeilsymbol {
+    width: 30px;
+    height: 30px;
+    margin-top: -8px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #suchblock .form-group,
+  .suchblock-unterseite-klein .form-group {
+    float: left;
+    width: 100%;
+  }
+  #suchblock .form-control,
+  .suchblock-unterseite-klein .form-control {
+    background-color: #fff;
+    float: left;
+    height: 40px;
+    width: 90%;
+    border: none;
+    border-radius: 0px;
+  }
+  #suchblock .suchfeld-lupe,
+  .suchblock-unterseite-klein .suchfeld-lupe {
+      background-color: #fff;
+      cursor:pointer;
+      float: left;
+      width:10%;
+      height: 40px;
+      text-align:center;
+      border-left: 1px solid #fff;
+  }
+  #suchblock .suchfeld-lupe img,
+  .suchblock-unterseite-klein .suchfeld-lupe img {
+    margin: 8px 5px 0px 0px;
+    width: 25px;
+    height: 25px;
+  }
+
+  /* ###################################### */
+  /*  seperates Styling fÃ¼r die Unterseiten */
+
+  .suchblock-unterseite-klein {
+    margin-top: 50px;
+    max-height: 400px !important;
+    background: none;
+    background-color: #d67545;
+  }
+
+  .suchblock-unterseite-klein p {
+    padding-top: 0px;
+  }
+
+
+
+/* ==========================================================================
+  3. Reihe - Kontakt, MenÃ¼ & Flyer
+  ========================================================================== */
+
+  .row_reihe_3 {
+    background-image: url("../images/hintergrund-gruen.png");
+    background-size: cover;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 4px 4px 10px(0, 0, 0, .5);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, .5);
+    min-height: 200px;
+    margin-top: 5%;
+    padding-top: 3%;
+    color: black;
+  }
+  .row_reihe_3 b {
+    line-height: 30px;
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .row_reihe_3 a {
+    color: black;
+    font-size: 16px;
+  }
+  .row_reihe_3 i {
+    padding-right: 15px;
+  }
+  .row_reihe_3 .link_header {
+    font-size: 18px;
+  }
+  .row_reihe_3 .flyer {
+    text-align: center;
+  }
+  .row_reihe_3 .flyer img {
+    max-height: 230px;
+  }
+  @media screen and (max-width: 768px){       /* Smartphone */
+    .row_reihe_3 .flyer img {
+      max-height: 180px;
+    }
+  }
+
+  .row_reihe_3 .flyer h5 {
+    text-align: center;
+    color: #fff;
+  }
+  @media screen and (max-width: 768px){       /* Smartphone */
+    .row_reihe_3 .flyer h5 {
+      font-size: 17px;
+    }
+  }
+
+  .flyer-mobil h5 {
+    text-align: center;
+  }
+
+
+/* ==========================================================================
+  Layout Unterseite: Team
+  ========================================================================== */
+
+  .teamInfotext h2 {
+    padding-bottom: 10px;
+  }
+  .teamInfotext ul li {
+    margin-left: 20px;
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+
+  .teamMitglied {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  .teamMitglied h1 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    color: black;
+  }
+  .teamMitglied p {
+    max-width: 65%;
+    margin-right: 5%;
+    float: left;
+  }
+  .teamMitglied img {
+    max-width: 30%;
+    min-width: 30%;
+    height: auto;
+    padding-top: 7px;
+    float: right;
+  }
+  @media screen and (max-width:768px){      /* Smartphone */
+    .teamMitglied p {
+      max-width: 100%;
+      min-width: 100%;
+      display: block;
+    }
+
+    .teamMitglied img {
+      max-width: 100%;
+      min-width: 100%;
+      margin-bottom: 10px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .team-aside #suchblock {
+    max-width: 200px;
+  }
+
+
+
+  /* ==========================================================================
+    Layout Unterseite: Einrichtungen
+    ========================================================================== */
+
+  .einrichtungen h1 {
+    width: 10%;
+    float: left;
+    padding-left: 15px;
+  }
+  .einrichtungen ul {
+    width: 90%;
+    float: left;
+    margin-bottom: 20px;
+  }
+  .einrichtungen ul li a {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+  }
+  .einrichtungen div {          /* jeweils ein DIV-Container pro Buchstabe */
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media screen and (max-width: 768px) {    /* Smartphone */
+    .einrichtungen div {
+      padding-left: 16px;
+
+    }
+  }
+
+
+  /* ==========================================================================
+    FuÃŸbereich
+    ========================================================================== */
+
+    .fussbereich {
+      margin-top: 5%;
+      color: black;
+      font-weight: 600;
+    }
+    .fussbereich a {
+      font-size: 17px;
+      font-weight: 500;
+      color: black;
+      text-transform: uppercase;
+      text-align: right;
+    }
+    .fussbereich h5 {
+      color: #FFFFCC;
+      text-align: center;
+    }
+    .fussbereich p .impressum {
+      float: right;
+    }
+
+    .fussbereich img {
+      float: right;
+      padding-bottom: 10%;
+      padding-left: 10%;
+      margin: 0;
+
+    }
+
+    @media screen and (max-width: 768px){       /* IMG SMARTPHONE ANSICHT */
+      .fussbereich img {
+
+        max-width: 200px;
+        min-height: 60px;
+        max-height: 150px;
+      }
+    }
+
+    @media screen and (min-width: 769px){       /* IMG TABLET ANSICHT */
+      .fussbereich img {
+        max-width: 150px;
+        max-height: 80px;
+      }
+    }
+
+
+  /* ==========================================================================
+    Erweiterungen Meurer
+    ========================================================================== */
+    .suchfeld-lupe input[type=submit] {
+    background: url("../images/Symbole/lupe-klein.png");
+    border: 0;
+    display: block;
+    height: 25px;
+    width:  25px;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    margin-top: 10px;
+	}
+ 	/* Xinha
+    */
+
+
+ .htmlarea td
+  {
+ margin: 0px !important;
+ padding: 2px !important;
+ /* border-collapse: collapse !important; */
+}
