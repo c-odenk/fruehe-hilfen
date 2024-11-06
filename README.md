@@ -3,10 +3,13 @@
 In Zusammenarbeit mit einem kleinen IT-Büro, habe ich das Frontend für die Website der Frühen Hilfen Bonn entwickelt. Das Design wurde vorgegeben (PDS Vorlage). Das Frontend wurde nach erfolgreicher Zusammenarbeit an das IT-Büro ausgeliefert, welches das Backend programmierte. 
 <br>
 <br>
-Die Website kann hier besucht werden: <a target="_blank" href="https://fruehehilfen-bonn.de/"> Frühe Hilfen </a>  <u>Anmkergung:</u> Das Frontend wurde aber scheinbar längere Zeit nicht mehr gewartet / entsprechend erweitert.
+Die Website kann hier besucht werden: <a target="_blank" href="https://fruehehilfen-bonn.de/"> Frühe Hilfen </a>. 
 
 <br>
 <br>
+
+** Das Frontend wurde aber scheinbar längere Zeit nicht mehr gewartet / entsprechend erweitert. **
+
 <br>
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
