@@ -6,10 +6,10 @@ Nach Abschluss der Frontend-Entwicklung wurde das Projekt an das IT-Büro überg
 <br>
 <br>
 🔗 Zur Website:: <a target="_blank" href="https://fruehehilfen-bonn.de/"> Frühe Hilfen </a>. 
-
 <br>
 
 ** Hinweis: Das Frontend wurde nach Übergabe offenbar längere Zeit nicht mehr gepflegt oder funktional erweitert. **
+<br>
 <br>
 
 ## 🛠️ Eingesetzte Technologien
