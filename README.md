@@ -1,15 +1,19 @@
-# Frühe Hilfen Bonn | Das Netzwerk für Vater, Mutter, Kind
+# 👨‍👩‍👧‍👦 Frühe Hilfen Bonn – Das Netzwerk für Vater, Mutter, Kind
+
+Im Rahmen einer Zusammenarbeit mit einem kleinen IT-Büro habe ich das komplette Frontend der Website Frühe Hilfen Bonn entwickelt. Die Gestaltung basierte auf einer vorgegebenen Designvorlage (PDS-Datei) und wurde von mir in ein modernes, responsives Webinterface umgesetzt.
+
+Nach Abschluss der Frontend-Entwicklung wurde das Projekt an das IT-Büro übergeben, das im Anschluss das Backend entwickelte und die Website produktiv schaltete.
 <br>
-In Zusammenarbeit mit einem kleinen IT-Büro, habe ich das Frontend für die Website der Frühen Hilfen Bonn entwickelt. Das Design wurde vorgegeben (PDS Vorlage). Das Frontend wurde nach erfolgreicher Zusammenarbeit an das IT-Büro ausgeliefert, welches das Backend programmierte. 
 <br>
-<br>
-Die Website kann hier besucht werden: <a target="_blank" href="https://fruehehilfen-bonn.de/"> Frühe Hilfen </a>. 
+🔗 Zur Website:: <a target="_blank" href="https://fruehehilfen-bonn.de/"> Frühe Hilfen </a>. 
 
 <br>
+
+** Hinweis: Das Frontend wurde nach Übergabe offenbar längere Zeit nicht mehr gepflegt oder funktional erweitert. **
 <br>
 
-** Das Frontend wurde aber scheinbar längere Zeit nicht mehr gewartet / entsprechend erweitert. **
-
+## 🛠️ Eingesetzte Technologien
+Für die Umsetzung des Frontends kamen folgende Webtechnologien zum Einsatz:
 <br>
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
